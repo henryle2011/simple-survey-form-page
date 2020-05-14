@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A Simple Survey Form</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  </head>
+
+  <body>
+    <div class="survey-name-block">
+      <h1 class="survey-name">
+        Survey
+      </h1>
+      <h3 class="survey-meta">
+        Thanks for your time!
+      </h3>
+    </div>
+    <form class="survey-form-main" action="/complete.html" method="post">
+      <fieldset>
+        <br>
+        <br>
+        <label for="name">What is your full name?</label><br>
+        <input id="name" type="text" name="name" value=""><br><br>
+        <label for="age">How old are you?</label><br>
+        <input id="age" type="number" name="age" value=""><br><br>
+        <label for="email">What is your email address?</label><br>
+        <input id="email" type="emaile" name="email" value=""><br><br>
+        <p class="">Please choose the best option to describe you:</p>
+        <div id="image-choice">
+          <div id="choice-1" style="background:#fff3d4">
+            <input type="radio" id="student" name="student" value="student">
+            <label for="student">College Student</label>
+          </div>
+          <div id="choice-2" style="background:#e2ffc4">
+            <input type="radio" id="instructer" name="instructer" value="instructer">
+            <label for="instructer">Instructer</label>
+          </div>
+          <div id="choice-3" style="background:#d2feff">
+            <input type="radio" id="mba" name="mba" value="mba">
+            <label for="mba">MBA</label>
+          </div>
+          <div id="choice-4" style="background:#ffd5e7">
+            <input type="radio" id="phd" name="phd" value="phd">
+            <label for="phd">PhD</label>
+          </div>
+        </div>
+        <br><br>
+        <input class="" id="submit-btn" type="submit" name="submit" value="SUBMIT">
+        <br><br>
+      </fieldset>
+    </form>
+  </body>
+
+  <footer class="footer">
+    Henry Le. All right reserved.
+  </footer>
+</html>

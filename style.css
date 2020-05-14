@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+  background:linear-gradient(90deg, rgb(67, 147, 163) 0%, rgb(67, 147, 163) 59%,rgb(93, 161, 169) 59%, rgb(93, 161, 169) 65%,rgb(119, 175, 175) 65%, rgb(119, 175, 175) 70%,rgb(145, 190, 181) 70%, rgb(145, 190, 181) 73%,rgb(171, 204, 187) 73%, rgb(171, 204, 187) 78%,rgb(197, 218, 193) 78%, rgb(197, 218, 193) 100%);
+}
+
+*, *:before,*:after {
+  box-sizing: inherit;
+}
+
+html body {
+  font-size: 10px;
+  font-family: monospace;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  align-items: center;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+}
+
+label, p {
+  font-size: 1.5em;
+}
+
+.survey-name-block{
+  margin-bottom: 20px;
+  align-content: center;
+
+}
+
+.survey-name, .survey-meta {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.survey-form-main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 100px;
+  margin: auto;
+  width: 100%;
+}
+
+#image-choice {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 20px 20px;
+  position: relative;
+  padding-bottom: 20%;
+  height: 0;
+}
+
+@media (max-width: 750px) {
+  #image-choice {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px 10px;
+    position: relative;
+    padding-bottom: 20%;
+    height: 0;
+  }
+}
+
+#image-choice div {
+  border: 2px dashed #ddd;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: auto;
+}
+
+fieldset {
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 5px 5px 10px green;
+}
+
+#submit-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+#submit-btn:hover {
+  background: rgb(214, 158, 46);
+  transform: scale(1.5);
+  transition: all 2s;
+  color: white;
+}
